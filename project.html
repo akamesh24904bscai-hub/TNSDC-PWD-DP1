@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Photo Album</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+    header {
+      background: #1877f2;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      background: #333;
+      color: white;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>📸 My Photo Album</h1>
+    <p>Memories captured forever</p>
+  </header>
+
+  <div class="gallery">
+    <img src="https://picsum.photos/id/1011/600/400" alt="Photo 1">
+    <img src="https://picsum.photos/id/1025/600/400" alt="Photo 2">
+    <img src="https://picsum.photos/id/1035/600/400" alt="Photo 3">
+    <img src="https://picsum.photos/id/1041/600/400" alt="Photo 4">
+    <img src="https://picsum.photos/id/1050/600/400" alt="Photo 5">
+    <img src="https://picsum.photos/id/1069/600/400" alt="Photo 6">
+  </div>
+
+  <footer>
+    <p>&copy; 2025 My Photo Album | All rights reserved</p>
+  </footer>
+
+</body>
+</html>
